@@ -372,6 +372,9 @@ OR
 sudo reboot
 
 
+<hr/>
+
+
 Sonarqube kurulumu
 
 sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.6.0.92116.zip
@@ -385,7 +388,7 @@ pwd
 sudo mv   /opt/sonarqube-10.6.0.92116    /opt/sonarqube
 
 
-
+<hr/>
 
 sonar kullanıcı oluşturulacak ve haklar verilecek
 
@@ -397,6 +400,7 @@ sudo useradd -c "user to run SonarQube" -d /opt/sonarqube -g sonar sonar
 sudo chown sonar:sonar /opt/sonarqube -R
 
 
+<hr/>
 
 veritabanıyla bu kullanıcıyı konuştur
 
@@ -410,6 +414,10 @@ sonar.jdbc.username=sonar
 sonar.jdbc.password=sonar
 
 sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube
+
+
+
+<hr/>
 
 
 Sonar servisini oluşturacağız.
@@ -440,6 +448,8 @@ LimitNPROC=4096
 
 [Install]
 WantedBy=multi-user.target
+
+<hr/>
 
 Makine açıldığında sonarqube otomatik olarak çalıştırma komutları
 
