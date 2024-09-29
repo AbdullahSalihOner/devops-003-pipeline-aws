@@ -13,8 +13,8 @@ pipeline {
         }
         stage('Checkout from SCM') {
             steps {
-                //   checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/asoner01/devops-003-pipeline-aws']])
-                git branch: 'master', credentialsId: 'github', url: 'https://github.com/asoner01/devops-003-pipeline-aws'
+                //   checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/AbdullahSalihOner/devops-003-pipeline-aws']])
+                git branch: 'master', credentialsId: 'github', url: 'https://github.com/AbdullahSalihOner/devops-003-pipeline-aws'
             }
         }
         stage('Build Maven') {
